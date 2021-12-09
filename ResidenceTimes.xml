@@ -1,0 +1,12 @@
+<fetch top="50">
+  <entity name="cra_residence">
+    <attribute name="cra_security_screening_case" />
+    <attribute name="cra_country" />
+    <attribute name="cra_from" />
+    <attribute name="cra_to" />
+    <attribute name="cra_months" />
+    <order attribute="cra_security_screening_case" />
+    <order attribute="cra_from" />
+    <order attribute="cra_to" />
+  </entity>
+</fetch>

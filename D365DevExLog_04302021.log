@@ -1,0 +1,5 @@
+2021-04-30 08:00:21.9074|INFO|D365DeveloperExtensions.Core.UserOptions.UserOptionsGridTools|CrmSvcUtilToolPath now: C:\Dynamics365\MicrosoftDynamics365SDK\SDK\Bin
+2021-04-30 08:10:35.4805|INFO|D365DeveloperExtensions.Core.UserOptions.UserOptionsGridTools|CrmSvcUtilToolPath now: C:\Dynamics365\SDK\Bin
+2021-04-30 09:29:08.8337|INFO|D365DeveloperExtensions.Core.UserOptions.UserOptionsGridTools|PluginRegistrationToolPath now: C:\Dynamics365\SDK\Tools\PluginRegistration
+2021-04-30 09:29:28.5303|INFO|D365DeveloperExtensions.Core.UserOptions.UserOptionsGridTools|SolutionPackagerToolPath now: C:\Dynamics365\SDK\Tools\PackageDeployer
+2021-04-30 09:29:52.9966|INFO|D365DeveloperExtensions.Core.UserOptions.UserOptionsGridTools|SolutionPackagerToolPath now: 

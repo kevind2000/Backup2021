@@ -1,0 +1,13 @@
+<fetch aggregate="true">
+  <entity name="cra_securityscreenings">
+    <attribute name="cra_consent_given_date" alias="given_date" aggregate="max" />
+    <order alias="given_date" />
+    <link-entity name="cra_consent" to="cra_securityscreeningsid" from="cra_security_screening_case" alias="cra_consent" link-type="inner">
+      <attribute name="cra_verification" alias="verification" groupby="true" />
+    </link-entity>
+    <filter>
+      <condition attribute="cra_security_profile" operator="eq" value="0685608e-ca76-eb11-a829-000d3a84e9e0" />
+      <condition attribute="cra_consent_given_status" entityname="cra_consent" operator="eq" value="171100001" />
+    </filter>
+  </entity>
+</fetch>

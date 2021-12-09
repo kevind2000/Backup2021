@@ -1,0 +1,21 @@
+An error occurred while validating input parameters: Microsoft.OData.ODataException: An unexpected 'StartArray' node was found when reading from the JSON reader. A 'PrimitiveValue' node was expected.
+at Microsoft.OData.Json.JsonReaderExtensions.ValidateNodeType(IJsonReader jsonReader, JsonNodeType expectedNodeType)
+at Microsoft.OData.JsonLight.ODataJsonLightPropertyAndValueDeserializer.ReadPrimitiveValue(Boolean insideJsonObjectValue, IEdmPrimitiveTypeReference expectedValueTypeReference, Boolean validateNullValue, String propertyName)
+at Microsoft.OData.JsonLight.ODataJsonLightPropertyAndValueDeserializer.ReadNonEntityValueImplementation(String payloadTypeName, IEdmTypeReference expectedTypeReference, PropertyAndAnnotationCollector propertyAndAnnotationCollector, CollectionWithoutExpectedTypeValidator collectionValidator, Boolean validateNullValue, Boolean isTopLevelPropertyValue, Boolean insideComplexValue, String propertyName, Nullable`1 isDynamicProperty)
+at Microsoft.OData.JsonLight.ODataJsonLightResourceDeserializer.ReadEntryDataProperty(IODataJsonLightReaderResourceState resourceState, IEdmProperty edmProperty, String propertyTypeName)
+at Microsoft.OData.JsonLight.ODataJsonLightResourceDeserializer.ReadPropertyWithValue(IODataJsonLightReaderResourceState resourceState, String propertyName)
+at Microsoft.OData.JsonLight.ODataJsonLightResourceDeserializer.<>c__DisplayClass4_0.<ReadResourceContent>b__0(PropertyParsingResult propertyParsingResult, String propertyName)
+at Microsoft.OData.JsonLight.ODataJsonLightDeserializer.ProcessProperty(PropertyAndAnnotationCollector propertyAndAnnotationCollector, Func`2 readPropertyAnnotationValue, Action`2 handleProperty)
+at Microsoft.OData.JsonLight.ODataJsonLightResourceDeserializer.ReadResourceContent(IODataJsonLightReaderResourceState resourceState)
+at Microsoft.OData.JsonLight.ODataJsonLightReader.ReadResourceStart(PropertyAndAnnotationCollector propertyAndAnnotationCollector, SelectedPropertiesNode selectedProperties)
+at Microsoft.OData.JsonLight.ODataJsonLightReader.ReadAtStartImplementationSynchronously(PropertyAndAnnotationCollector propertyAndAnnotationCollector)
+at Microsoft.OData.ODataReaderCore.ReadImplementation()
+at Microsoft.OData.ODataReaderCore.InterceptException[T](Func`1 action)
+at System.Web.OData.Formatter.Deserialization.ODataReaderExtensions.ReadResourceOrResourceSet(ODataReader reader)
+at System.Web.OData.Formatter.Deserialization.ODataResourceDeserializer.Read(ODataMessageReader messageReader, Type type, ODataDeserializerContext readContext)
+at System.Web.OData.Formatter.ODataMediaTypeFormatter.ReadFromStream(Type type, Stream readStream, HttpContent content, IFormatterLogger formatterLogger)
+
+https://community.dynamics.com/365/unified-interface/f/unified-interface-forum/405595/dynamics-365-crm-error-while-saving-a-form-when-multiselect-option-set-has-values-selected
+https://stackoverflow.com/questions/59461355/cannot-set-multi-select-option-field-when-creating-record-in-dynamics-365-xrm-we
+https://www.itaintboring.com/dynamics-crm/dynamics-365-v9-multi-select-option-set/
+https://bettercrm.blog/2017/11/26/multi-language-javascript-messages-in-dynamics-365-9-0-using-resx-files/
